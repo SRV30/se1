@@ -1,0 +1,133 @@
+/* Styles for Sidebar Component */
+
+.sidebar {
+  background: linear-gradient(to bottom, #7b1fa2, #9c27b0);
+  color: #fff;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.sidebar > a:first-child {
+  margin-bottom: 2rem;
+}
+
+.sidebar > a > img {
+  width: 100%;
+  max-width: 150px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 99, 71, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.sidebar > a > img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 99, 71, 0.8);
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  font: 200 1rem "Roboto";
+  padding: 2rem;
+  transition: all 0.5s;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.sidebar a:hover {
+  color: #ff6347;
+  transform: scale(1.1);
+}
+
+.sidebar a > p {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar a > p > svg {
+  margin-right: 1rem;
+}
+
+.sidebar-item {
+  margin-bottom: 10px;
+}
+
+.sidebar-item-header {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar-submenu {
+  margin-left: 20px;
+  display: none;
+}
+
+.sidebar-submenu-item {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #fff;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.sidebar-submenu-item svg {
+  margin-right: 5px;
+}
+
+.sidebar-submenu-item:hover {
+  color: #ff6347;
+}
+
+.sidebar-item-header + .sidebar-submenu {
+  display: none;
+}
+
+/* Expand/Collapse functionality */
+.sidebar-item-header:after {
+  content: '▼';
+  font-size: 12px;
+  margin-left: auto;
+}
+
+.sidebar-item-header.collapsed:after {
+  content: '►';
+}
+
+.sidebar-item-header.collapsed + .sidebar-submenu {
+  display: block;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .sidebar {
+    padding: 1rem 0.5rem;
+    background: linear-gradient(to bottom, #1e5799, #2989d8);
+  }
+  
+  .sidebar > a > img {
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 576px) {
+  .sidebar {
+    padding: 1rem 0.5rem;
+    justify-content: space-around;
+    background: linear-gradient(to bottom, #7a2f2a, #b7194e);
+  }
+
+  .sidebar > a > img {
+    max-width: 100px;
+  }
+
+  .sidebar a {
+    font: 200 1rem "Roboto";
+    padding: 1rem;
+    transition: all 0.5s;
+  }
+}

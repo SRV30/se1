@@ -1,0 +1,76 @@
+/* UserOptions Styles */
+.backdrop {
+  z-index: 1000;
+  color: #fff;
+}
+
+.speedDial {
+  position: fixed;
+  top: 0px;
+  right: 310px;
+}
+
+.speedDialIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.speedDialAction {
+  background-color: #fff;
+  color: #000;
+}
+
+.speedDialAction:hover {
+  background-color: #f1f1f1;
+}
+
+/* Media Queries */
+
+/* For laptops and desktops */
+@media screen and (min-width: 1025px) {
+  .speedDial {
+    top: 10px;
+    right: 250px;
+  }
+
+  .speedDialIcon {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* For tablets */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .speedDial {
+    top: 10px;
+    right: 220px;
+  }
+
+  .speedDialIcon {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* For mobile devices */
+@media screen and (max-width: 767px) {
+  .speedDial {
+    top: 10px;
+    right: 130px;
+  }
+
+  .speedDialIcon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .speedDialAction {
+    background-color: #007bff;
+    color: #fff;
+  }
+
+  .speedDialAction:hover {
+    background-color: #0056b3;
+  }
+}

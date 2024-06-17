@@ -1,0 +1,78 @@
+.updateProfileContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #ffffff, #f3ecec);
+  }
+  
+  .updateProfileBox {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .updateProfileBox:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .updateProfileHeading {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .updateProfileForm {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .updateProfileName,
+  .updateProfileEmail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .updateProfileName input,
+  .updateProfileEmail input {
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .updateProfileName input:focus,
+  .updateProfileEmail input:focus {
+    border-color: #007bff;
+  }
+  
+  .updateProfileBtn {
+    background-color: #f3ecec;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .updateProfileBtn:hover {
+    background-color: #cb6666;
+    color: white;
+  }
+  
+  #updateProfileImage {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  #updateProfileImage img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  

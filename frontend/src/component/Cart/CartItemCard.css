@@ -1,0 +1,87 @@
+.CartItemCard {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.CartItemCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.CartItemCard img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.CartItemCard div {
+  flex-grow: 1;
+}
+
+.CartItemCard a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2986ad;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.CartItemCard a:hover {
+  color: #1a4b6d;
+}
+
+.CartItemCard span {
+  display: block;
+  margin-top: 10px;
+  color: #555;
+}
+
+.CartItemCard p {
+  font-size: 14px;
+  color: #cc0000;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.CartItemCard p:hover {
+  color: #a80000;
+}
+
+
+@media screen and (max-width: 767px) {
+  .CartItemCard {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px;
+  }
+
+  .CartItemCard img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .CartItemCard div {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .CartItemCard img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .CartItemCard {
+    padding: 20px;
+  }
+}

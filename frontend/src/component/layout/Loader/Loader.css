@@ -1,0 +1,70 @@
+.loading {
+  width: 100vw;
+  height: 100vh;
+  background-color: #2986ad;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.loading > div {
+  width: 100px;
+  height: 100px;
+  border: 10px solid transparent;
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading:before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle closest-side, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.1) 80%);
+  animation: overlayExpand 2s ease-out infinite;
+  z-index: -1;
+}
+
+@keyframes overlayExpand {
+  to {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .loading > div {
+    width: 70px;
+    height: 70px;
+    border-width: 8px;
+    border-top-color: #a72828; 
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .loading > div {
+    width: 80px;
+    height: 80px;
+    border-width: 9px;
+    border-top-color: #5928a7; 
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .loading > div {
+    border-top-color: #28a745;
+  }
+}

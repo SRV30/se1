@@ -1,0 +1,184 @@
+/* processOrder.css */
+
+/* Overall container styles */
+.order-details-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+.order-details-header {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* Shipping details section */
+.shipping-details {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.shipping-details h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.shipping-details .user-details {
+  margin-bottom: 10px;
+}
+
+.shipping-details .user-details p {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #888;
+}
+
+.shipping-details .user-details span {
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+}
+
+.shipping-details p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+/* Payment status section */
+.payment-status {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.payment-status p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.payment-status .payment-status {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.payment-status .not-paid {
+  color: #f44336; /* Red color for not paid status */
+}
+
+/* Order items section */
+.order-items {
+  margin-bottom: 20px;
+}
+
+.order-items h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.order-item img {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.order-item-details h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.order-item-details p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Status update form section */
+.status-update-form {
+  margin-bottom: 20px;
+}
+
+.status-update-form div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.status-update-form .MuiSvgIcon-root {
+  font-size: 28px;
+  margin-right: 10px;
+  color: #4caf50; /* Green color for icon */
+}
+
+.status-update-form select {
+  width: 200px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.status-update-form .submit-button {
+  background-color: #4caf50; /* Green background color for button */
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.status-update-form .submit-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Error message styles */
+.error-message {
+  font-size: 14px;
+  color: #f44336; /* Red color for error messages */
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .order-details-container {
+    padding: 10px;
+  }
+
+  .shipping-details,
+  .payment-status,
+  .order-item {
+    padding: 15px;
+  }
+
+  .status-update-form select {
+    width: 100%;
+  }
+}

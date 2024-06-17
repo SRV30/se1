@@ -1,0 +1,96 @@
+.shippingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+.shippingBox {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.shippingHeading {
+  color: #007bff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.shippingForm {
+  display: grid;
+  gap: 15px;
+}
+
+.shippingForm div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.shippingForm div svg {
+  color: #007bff;
+}
+
+.shippingForm div input,
+.shippingForm div select {
+  flex: 1;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+.shippingForm div select {
+  appearance: none;
+  background-color: #ffffff;
+}
+
+.shippingBtn {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.shippingBtn:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 767px) {
+  .shippingBox {
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .shippingBox {
+    padding: 25px;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.shippingContainer {
+  animation: fadeInUp 0.5s ease-in-out;
+}

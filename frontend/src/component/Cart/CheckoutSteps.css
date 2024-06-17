@@ -1,0 +1,58 @@
+.Stepper-root {
+  width: 100%;
+  background-color: transparent;
+  padding: 0;
+}
+
+.Stepper-alternativeLabel .MuiStepLabel-labelContainer {
+  display: flex;
+  align-items: center;
+}
+
+.Stepper-step {
+  padding: 10px 0;
+}
+
+.MuiStepIcon-root {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.MuiStepLabel-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.MuiStepIcon-active {
+  color: #007bff;
+}
+
+.MuiStepLabel-active .MuiStepLabel-label {
+  color: #007bff;
+}
+
+.MuiStepIcon-completed {
+  color: #28a745;
+}
+
+.MuiStepLabel-completed .MuiStepLabel-label {
+  color: #28a745;
+}
+
+@media screen and (max-width: 767px) {
+  .MuiStepLabel-label {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .MuiStepLabel-label {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .MuiStepIcon-root {
+    font-size: 30px;
+  }
+}

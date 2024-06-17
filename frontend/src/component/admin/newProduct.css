@@ -1,0 +1,115 @@
+
+.sidebar {
+    background-color: #343a40;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #6c757d;
+}
+
+
+.newProductContainer {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.newProductContainer form {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.newProductContainer h1 {
+    color: #333;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.newProductContainer div {
+    display: flex;
+    align-items: center;
+}
+
+.newProductContainer input,
+.newProductContainer textarea,
+.newProductContainer select {
+    flex: 1;
+    padding: 1rem;
+    margin-left: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.newProductContainer select {
+    background-color: #f8f9fa;
+}
+
+
+#createProductFormImage {
+    width: 100%;
+    overflow: auto;
+}
+
+#createProductFormImage img {
+    width: 15vmax;
+    margin: 0 0.5vmax;
+}
+
+#createProductBtn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#createProductBtn:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+#createProductBtn:hover {
+    background-color: #0056b3;
+}
+
+
+
+@media screen and (max-width: 576px) {
+    .newProductContainer input,
+    .newProductContainer textarea,
+    .newProductContainer select {
+        font-size: 0.9rem;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 0.5s ease-in-out;
+}

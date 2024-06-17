@@ -1,0 +1,144 @@
+/* Container Styling */
+.profileContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 50px auto;
+  max-width: 1000px;
+  padding: 20px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #f0f0f0 0%, #ffffff 100%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.profileContainer:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Styling */
+.profileContainer h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+  background: linear-gradient(to right, #007bff, #00c6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Image Styling */
+.profileContainer img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 3px solid #007bff;
+  transition: transform 0.3s;
+}
+
+.profileContainer img:hover {
+  transform: scale(1.1);
+}
+
+/* Link Styling */
+.profileContainer a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 25px;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(to right, #007bff, #00c6ff);
+  text-decoration: none;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.profileContainer a:hover {
+  background: linear-gradient(to right, #0056b3, #0091e6);
+  transform: scale(1.05);
+}
+
+/* Section Styling */
+.profileContainer>div {
+  flex: 1;
+  margin: 20px;
+}
+
+.profileContainer h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.profileContainer p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #777;
+}
+
+.profileContainer div>div {
+  margin-bottom: 20px;
+}
+
+.profileContainer div>div:last-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.profileContainer div>div:last-child a {
+  margin-bottom: 10px;
+  background: linear-gradient(to right, #ffc107, #ffda44, #28a745, #3dd598);
+}
+
+.profileContainer div>div:last-child a:hover {
+  background: linear-gradient(to right, #218838, #2abf7f);
+}
+
+.profileContainer div>div:last-child a:last-child {
+  background: linear-gradient(to right, #28a745, #3dd598, #ffc107, #ffda44);
+}
+
+.profileContainer div>div:last-child a:last-child:hover {
+  background: linear-gradient(to right, #e0a800, #eac732);
+}
+
+/* Media query for screens with a max width of 600px */
+@media screen and (max-width: 600px) {
+  .profileContainer {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 20px auto;
+  }
+
+  .profileContainer>div {
+    margin: 10px 0;
+  }
+
+  .profileContainer img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .profileContainer h1 {
+    font-size: 2rem;
+  }
+
+  .profileContainer h4 {
+    font-size: 1.2rem;
+  }
+
+  .profileContainer p {
+    font-size: 1rem;
+  }
+
+  .profileContainer a {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .profileContainer div>div:last-child a {
+    margin-bottom: 8px;
+  }
+}

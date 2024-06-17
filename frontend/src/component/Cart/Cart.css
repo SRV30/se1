@@ -1,0 +1,176 @@
+.emptyCart,
+.cartPage {
+  margin: 20px auto;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.emptyCart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  text-align: center;
+}
+
+.emptyCart svg {
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+
+.emptyCart a {
+  margin-top: 20px;
+  color: #2986ad;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.emptyCart a:hover {
+  color: #1a4b6d;
+}
+
+.cartHeader {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 20px;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+}
+
+.cartContainer {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.cartInput {
+  display: flex;
+  align-items: center;
+}
+
+.cartInput button {
+  background-color: #2986ad;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+  margin: 0 5px;
+  transition: background-color 0.3s;
+}
+
+.cartInput button:hover {
+  background-color: #1a4b6d;
+}
+
+.cartInput input {
+  width: 40px;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.cartSubtotal {
+  text-align: right;
+}
+
+.cartGrossProfit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 2px solid #2986ad;
+}
+
+.cartGrossProfitBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.cartGrossProfit p {
+  font-weight: bold;
+}
+
+.checkOutBtn {
+  text-align: right;
+}
+
+.checkOutBtn button {
+  background-color: #2986ad;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.checkOutBtn button:hover {
+  background-color: #1a4b6d;
+}
+
+/* Responsive design */
+@media screen and (max-width: 767px) {
+  .emptyCart,
+  .cartPage {
+    padding: 10px;
+  }
+
+  .emptyCart {
+    padding: 30px;
+  }
+
+  .cartHeader,
+  .cartContainer {
+    display: block;
+    text-align: center;
+    border-bottom: none;
+  }
+
+  .cartHeader p,
+  .cartContainer p {
+    text-align: center;
+    display: none;
+  }
+
+  .cartInput {
+    justify-content: center;
+  }
+
+  .cartGrossProfit {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .checkOutBtn {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .cartInput input {
+    width: 30px;
+  }
+}
+
+/* Different colors for different devices */
+@media screen and (min-width: 1025px) {
+  .emptyCart,
+  .cartPage {
+    padding: 30px;
+  }
+}

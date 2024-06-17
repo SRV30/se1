@@ -1,0 +1,114 @@
+.confirmOrderPage {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.confirmshippingArea,
+.confirmCartItems,
+.orderSummary {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.confirmshippingArea {
+  margin-bottom: 20px;
+}
+
+.confirmshippingAreaBox,
+.confirmCartItemsContainer {
+  margin-top: 10px;
+}
+
+.confirmshippingAreaBox div,
+.confirmCartItemsContainer div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.confirmshippingAreaBox p,
+.confirmCartItemsContainer p {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.confirmCartItemsContainer img {
+  width: 60px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.orderSummary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.orderSummaryTotal {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.orderSummaryTotal span {
+  font-weight: bold;
+}
+
+.paymentMethod {
+  margin-top: 20px;
+}
+
+.paymentMethod div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.paymentMethod input[type="radio"] {
+  margin-right: 10px;
+}
+
+.paymentMethod label {
+  font-size: 16px;
+}
+
+button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 767px) {
+  .confirmOrderPage {
+    flex-direction: column;
+  }
+
+  .confirmshippingArea,
+  .confirmCartItems,
+  .orderSummary {
+    padding: 15px;
+  }
+
+  .confirmCartItemsContainer img {
+    width: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .confirmOrderPage {
+    gap: 15px;
+  }
+}

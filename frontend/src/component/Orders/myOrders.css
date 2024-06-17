@@ -1,0 +1,84 @@
+/* Styles for MyOrdersComponent */
+
+.my-orders-container {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.my-orders-heading {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.welcome-text {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.error-text {
+  color: red;
+}
+
+.orders-table {
+  width: 100%;
+  overflow-x: auto;
+  /* Ensure horizontal scroll on small screens */
+}
+
+.order-row {
+  transition: background-color 0.3s ease;
+}
+
+.order-row:hover {
+  background-color: #f0f0f0;
+}
+
+.status-indicator {
+  margin-bottom: 20px;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.greenColor {
+  background-color: lightgreen;
+}
+
+.redColor {
+  background-color: rgb(237, 207, 203);
+}
+
+.MuiIconButton-root {
+  padding: 8px;
+}
+
+.MuiSvgIcon-root {
+  font-size: 1.2rem;
+}
+
+
+@media (max-width: 768px) {
+  .my-orders-container {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .orders-table {
+    font-size: 14px;
+  }
+}

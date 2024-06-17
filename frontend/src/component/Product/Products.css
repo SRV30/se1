@@ -1,0 +1,163 @@
+/* Products.css */
+
+/* Main container for the entire products section */
+.mainContainer {
+  display: flex;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+/* Left side filter box */
+.filterBox {
+  width: 25%;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the slider */
+.slidercss {
+  margin-top: 20px;
+}
+
+/* Categories list */
+.categoryBox {
+  list-style-type: none;
+  padding: 0;
+  max-height: 500px; /* Adjust the maximum height as per your design */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.categoryBox::-webkit-scrollbar {
+  width: 5px; /* Width of the scrollbar */
+}
+
+.categoryBox::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners of the thumb */
+}
+
+.category-link {
+  cursor: pointer;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  background-color: #ddd;
+}
+
+.category-link:hover {
+  background-color: #b0c4de;
+}
+
+/* Ratings slider fieldset */
+fieldset {
+  margin-top: 20px;
+  border: none;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.productsHeading {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+/* Product card */
+.product-card {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.productDetails {
+  margin-top: 15px;
+}
+
+.productName {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.productPrice {
+  font-size: 1.6rem;
+  color: #e74c3c;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* No products message */
+.no-products {
+  margin-top: 20px;
+  text-align: center;
+  color: #777;
+}
+
+/* Pagination box */
+.paginationBox {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Pagination styles (customize as per your design) */
+.page-item {
+  margin: 0 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #ddd;
+  border-radius: 3px;
+}
+
+.page-item:hover {
+  background-color: #b0c4de;
+}
+
+.pageItemActive {
+  font-weight: bold;
+}
+
+.pageLinkActive {
+  color: #333;
+}
+
+/* Responsive adjustments (optional) */
+@media (max-width: 768px) {
+  .mainContainer {
+    flex-direction: row;
+  }
+  
+  .filterBox, .productsContainer {
+    width: 100%;
+    margin-right: 0;
+  }
+  
+  .products {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
